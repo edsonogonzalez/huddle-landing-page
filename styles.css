@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background: no-repeat top/100% url(images/bg-mobile.svg), hsl(257, 40%, 49%);
+  /* background: url(images/bg-mobile.svg) top center no-repeat, hsl(257, 40%, 49%); */
+}
+
+img {
+  width: 100%;
+}
+
+.hero-logo {
+  width: 150px;
+  margin: 2.5em 1.75em;
+}
+
+.hero-mockup {
+  padding: 0 1.95em;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header {
+  text-align: center;
+  width: 300px;
+  font-size: 1.75em;
+  margin: 1.5em auto;
+}
+
+.content-text {
+  text-align: center;
+  padding: 0 2.25em;
+  margin-bottom: 3em;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background: white;
+  text-align: center;
+  padding: 1em;
+  border-radius: 2em;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin: 2.5em 0;
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 1.5em;
+  margin: 0 0.25em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 620px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: no-repeat center/100% url(images/bg-desktop.svg),
+      hsl(257, 40%, 49%);
+    /* background: url(images/bg-desktop.svg) top center no-repeat,
+      hsl(257, 40%, 49%); */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+
+  .hero-logo {
+    width: 200px;
+    margin: 2em 0 4em 4.5em;
+  }
+
+  .hero-mockup {
+    width: 900px;
+    padding: 0;
+  }
+
+  .hero__content {
+    width: 30%;
+  }
+
+  .content-header {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin: 2.25em 0 0 0;
+    text-align: left;
+    width: 450px;
+  }
+
+  .content-text {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 2em 0;
+    text-align: left;
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  .btn:hover {
+    opacity: 0.75;
+  }
+
+  .social-links {
+    margin: 15em 0 0 0;
+    text-align: right;
+  }
+
+  .social-icon {
+    margin: 0;
+    padding: 0 0.25em;
+    font-size: 2.5rem;
+  }
+
+  .social-icon:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+
+  footer {
+    padding-top: 1em;
+  }
+}
